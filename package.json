@@ -38,7 +38,9 @@
     "lint": "./node_modules/.bin/eslint .",
     "coverage": "rm -rf ./coverage; ./node_modules/.bin/istanbul cover --dir coverage/lib ./node_modules/.bin/_mocha -- -R spec; ./node_modules/.bin/istanbul report",
     "coverage-lcov": "rm -rf ./coverage; ./node_modules/.bin/istanbul cover --dir coverage/lib --report lcovonly ./node_modules/.bin/_mocha -- -R spec; ./node_modules/.bin/istanbul report lcovonly",
-    "coveralls": "npm run coverage-lcov && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls": "npm run coverage-lcov && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "pre-commit": [
     "lint"
@@ -55,18 +57,20 @@
     "semver": "^5.1.0",
     "ssh2": "^0.4.15",
     "util-extend": "^1.0.1",
-    "v8flags": "^2.0.10"
+    "v8flags": "^2.0.10",
+    "@snyk/protect": "latest"
   },
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.3.0",
-    "coveralls": "^2.11.4",
-    "eslint": "^1.10.3",
+    "coveralls": "^3.0.0",
+    "eslint": "^7.3.0",
     "istanbul": "^0.4.0",
     "markdox": "^0.1.10",
-    "mocha": "^2.3.3",
+    "mocha": "^10.1.0",
     "pre-commit": "^1.1.1",
     "proxyquire": "^1.7.3",
     "sinon": "^1.17.2"
-  }
+  },
+  "snyk": true
 }
