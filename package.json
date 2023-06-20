@@ -52,7 +52,7 @@
     "nopt": "^3.0.4",
     "pretty-hrtime": "^1.0.1",
     "prompt": "^0.2.14",
-    "semver": "^5.1.0",
+    "semver": "^7.5.2",
     "ssh2": "^0.4.15",
     "util-extend": "^1.0.1",
     "v8flags": "^2.0.10"
