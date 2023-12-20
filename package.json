@@ -48,7 +48,7 @@
     "chalk": "^1.1.1",
     "fibers": "^4.0.1",
     "interpret": "^1.0.0",
-    "liftoff": "^2.2.0",
+    "liftoff": "^4.0.0",
     "nopt": "^3.0.4",
     "pretty-hrtime": "^1.0.1",
     "prompt": "^0.2.14",
