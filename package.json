@@ -51,7 +51,7 @@
     "liftoff": "^2.2.0",
     "nopt": "^3.0.4",
     "pretty-hrtime": "^1.0.1",
-    "prompt": "^0.2.14",
+    "prompt": "^1.2.0",
     "semver": "^5.1.0",
     "ssh2": "^0.4.15",
     "util-extend": "^1.0.1",
